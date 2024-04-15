@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tax Calculator</h1>
+    <div class="container">
+        <form id="tax-form">
+            <div class="form-group">
+                <label for="gross-income">Gross Annual Income:</label>
+                <input type="number" id="gross-income" name="grossIncome" placeholder="Enter gross annual income" required>
+            </div>
+            <div class="form-group">
+                <label for="extra-income">Extra Income:</label>
+                <input type="number" id="extra-income" name="extraIncome" placeholder="Enter extra income (optional)">
+            </div>
+            <div class="form-group">
+                <label for="age-group">Age Group:</label>
+                <select id="age-group" name="ageGroup" required>
+                    <option value="">Select Age Group</option>
+                    <option value="below-60">Below 60</option>
+                    <option value="60-80">60-80</option>
+                    <option value="above-80">Above 80</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="deductions">Total Applicable Deductions:</label>
+                <input type="number" id="deductions" name="deductions" placeholder="Enter total deductions (optional)">
+            </div>
+            <button type="submit" class="open-button">Submit</button>
+        </form>
+        <dialog  id="result">
+            
+                <h2>Your Overall Income will be</h2>
+                <p id="total_amount"></p>
+                <p id="line3">after tax deductions</p>
+            <button  type="submit" class="close-button">Close</button>
+        </dialog>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
