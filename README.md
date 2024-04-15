@@ -1,6 +1,6 @@
 # Tax_calculator
 #steps to run this project
-  to  run this follow following steps 
+  /nto  run this follow following steps 
   first downlaod the tax_calculator file 
   second opent the folder in vscode
   then run the html file in liver server
